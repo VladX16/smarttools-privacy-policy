@@ -1,0 +1,1 @@
+# smarttools-privacy-policy
