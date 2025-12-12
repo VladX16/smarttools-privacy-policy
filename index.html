@@ -5,12 +5,9 @@
   <title>Smart Tools – Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root {
-      color-scheme: light dark;
-    }
+    :root { color-scheme: light dark; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       max-width: 960px;
       margin: 0 auto;
       padding: 24px 16px 48px;
@@ -19,32 +16,14 @@
       background: #f3f4f6;
     }
     @media (prefers-color-scheme: dark) {
-      body {
-        background: #020617;
-        color: #e5e7eb;
-      }
+      body { background: #020617; color: #e5e7eb; }
     }
-    h1, h2, h3 {
-      color: inherit;
-    }
-    h1 {
-      font-size: 1.9rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 1.8rem;
-      font-size: 1.3rem;
-    }
-    h3 {
-      margin-top: 1.2rem;
-      font-size: 1.1rem;
-    }
-    p {
-      margin: 0.4rem 0 0.8rem;
-    }
-    ul {
-      margin: 0.4rem 0 0.8rem 1.2rem;
-    }
+    h1, h2, h3 { color: inherit; }
+    h1 { font-size: 1.9rem; margin-bottom: 0.5rem; }
+    h2 { margin-top: 1.8rem; font-size: 1.3rem; }
+    h3 { margin-top: 1.2rem; font-size: 1.1rem; }
+    p { margin: 0.4rem 0 0.8rem; }
+    ul { margin: 0.4rem 0 0.8rem 1.2rem; }
     .card {
       background: #ffffff;
       border-radius: 16px;
@@ -52,30 +31,38 @@
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
     }
     @media (prefers-color-scheme: dark) {
-      .card {
-        background: #020617;
-        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
-      }
+      .card { background: #020617; box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9); }
     }
-    .muted {
-      color: #6b7280;
-      font-size: 0.9rem;
+    .muted { color: #6b7280; font-size: 0.9rem; }
+    @media (prefers-color-scheme: dark) {
+      .muted { color: #9ca3af; }
+    }
+    a { color: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      a { color: #60a5fa; }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.6rem;
+    }
+    th, td {
+      border: 1px solid rgba(107, 114, 128, 0.35);
+      padding: 10px;
+      vertical-align: top;
+      text-align: left;
     }
     @media (prefers-color-scheme: dark) {
-      .muted {
-        color: #9ca3af;
-      }
+      th, td { border-color: rgba(156, 163, 175, 0.28); }
     }
-    a {
-      color: #2563eb;
-    }
-    @media (prefers-color-scheme: dark) {
-      a {
-        color: #60a5fa;
-      }
+    code {
+      background: rgba(148, 163, 184, 0.2);
+      padding: 2px 6px;
+      border-radius: 6px;
     }
   </style>
 </head>
+
 <body>
   <div class="card">
     <h1>Smart Tools – Privacy Policy</h1>
@@ -84,7 +71,7 @@
     <p>
       This Privacy Policy describes how the mobile application
       <strong>Smart Tools</strong> (the “App”) handles information. The App is
-      developed and published by <strong>YOUR_NAME</strong> (the “Developer”).
+      developed and published by <strong>Vlady's Tools</strong> (the “Developer”).
       By using the App, you agree to the practices described in this Privacy Policy.
     </p>
 
@@ -112,23 +99,22 @@
 
     <h2>2. Personal data and PII</h2>
     <p>
-      The Developer does not collect, store or process information that directly
+      The Developer does not collect, store, or process information that directly
       identifies you as an individual (such as your name, email address, phone
-      number or postal address).
+      number, or postal address).
     </p>
     <p>
       However, some third-party services used in the App (in particular
-      advertising services) may collect certain device information for their own
-      purposes, as described in Section 6.
+      advertising and billing services) may collect certain device information for their own
+      purposes, as described below.
     </p>
 
     <h2>3. Data the App does NOT collect</h2>
     <p>The App, as implemented by the Developer, does <strong>not</strong> collect:</p>
     <ul>
-      <li>Names, email addresses or contact details</li>
+      <li>Names, email addresses, or contact details (beyond the support email you choose to send)</li>
       <li>Passwords or account credentials</li>
-      <li>Contact list, SMS messages or calendar events</li>
-      <li>User documents or files outside of the App’s own export functions</li>
+      <li>Contact list, SMS messages, or calendar events</li>
       <li>Precise GPS location for analytics or tracking</li>
       <li>Biometric data or sensitive personal categories</li>
     </ul>
@@ -159,7 +145,7 @@
       detect codes or extract text that you can view, edit and export.
     </p>
     <p>
-      The Developer does not upload your images, codes or OCR results to any
+      The Developer does not upload your images, codes, or OCR results to any
       server. If you choose to export results (for example, as CSV or PDF) or
       share them with other apps, this is done under your control using your
       device’s standard share or save dialogs.
@@ -200,7 +186,88 @@
       (e.g., that a purchase was successfully completed).
     </p>
 
-    <h2>8. Data retention</h2>
+    <!-- ✅ NEW SECTION (as requested) -->
+    <h2>8. Data Collection &amp; Processing – Server-Side Verification</h2>
+
+    <h3>Purchase Verification</h3>
+    <p>
+      When you make an in-app purchase or watch a rewarded advertisement, the App
+      performs <strong>server-side verification</strong> to prevent fraud and duplicate rewards.
+      During this process, the App may send limited information to our verification service.
+    </p>
+
+    <p><strong>Data sent to the verification server may include:</strong></p>
+    <ul>
+      <li>Transaction ID</li>
+      <li>Purchase token (anonymized)</li>
+      <li>Anonymous user identifier (UUID generated by the App)</li>
+      <li>Package name</li>
+    </ul>
+
+    <p>
+      This data is used <strong>only</strong> to verify legitimate purchases, prevent replay attacks,
+      and prevent duplicate ad rewards. It is not used for profiling, and it is not combined with
+      information that would identify you as a real person.
+    </p>
+
+    <h3>Processing and retention</h3>
+    <p>
+      Verification is processed using <strong>Cloudflare Workers</strong>.
+      Verification data is stored temporarily for fraud prevention and validation:
+    </p>
+    <ul>
+      <li><strong>Rewarded ad verification:</strong> up to <strong>30 days</strong></li>
+      <li><strong>Purchase verification records:</strong> up to <strong>1 year</strong></li>
+    </ul>
+    <p>
+      After these periods expire, the data is deleted or automatically purged.
+    </p>
+
+    <h3>Key points</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Data Sent</th>
+          <th>PII?</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Transaction ID</td>
+          <td>No</td>
+          <td>Prevent replay attacks / duplicate claims</td>
+        </tr>
+        <tr>
+          <td>Purchase token (anonymized)</td>
+          <td>No</td>
+          <td>Verify purchase with Google Play</td>
+        </tr>
+        <tr>
+          <td>User ID (UUID)</td>
+          <td>No*</td>
+          <td>Track rewards per device/user without real identity</td>
+        </tr>
+        <tr>
+          <td>Package name</td>
+          <td>No</td>
+          <td>API requirement / validation</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">
+      *The UUID is an anonymous identifier generated by the App and is not linked to your real-world identity.
+    </p>
+
+    <h2>9. Third-Party Services</h2>
+    <p>Smart Tools may use the following third-party services:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> (advertising and rewarded ads)</li>
+      <li><strong>Google Play Billing</strong> (purchases)</li>
+      <li><strong>Cloudflare Workers</strong> (verification processing)</li>
+    </ul>
+
+    <h2>10. Data retention</h2>
     <p>
       The App does not maintain remote user accounts or cloud storage managed
       by the Developer. Measurement values and locally stored scan results
@@ -212,7 +279,7 @@
       retain data according to their own policies.
     </p>
 
-    <h2>9. Your choices and controls</h2>
+    <h2>11. Your choices and controls</h2>
     <p>You can control many aspects of data and permissions, including:</p>
     <ul>
       <li>
@@ -231,7 +298,7 @@
       </li>
     </ul>
 
-    <h2>10. Children’s privacy</h2>
+    <h2>12. Children’s privacy</h2>
     <p>
       The App is intended for general audiences and is not directed specifically
       at children under the age of 13. The App does not knowingly collect
@@ -240,7 +307,7 @@
       such information can be removed if necessary.
     </p>
 
-    <h2>11. International users</h2>
+    <h2>13. International users</h2>
     <p>
       The App may be used by users in different countries. Third-party services
       (such as Google) may process information on servers located in various
@@ -248,7 +315,7 @@
       those third parties in accordance with their own privacy policies.
     </p>
 
-    <h2>12. Changes to this Privacy Policy</h2>
+    <h2>14. Changes to this Privacy Policy</h2>
     <p>
       The Developer may update this Privacy Policy from time to time.
       Any changes will be published on this page with an updated “Last updated”
@@ -256,7 +323,7 @@
       considered acceptance of the updated policy.
     </p>
 
-    <h2>13. Contact</h2>
+    <h2>15. Contact</h2>
     <p>
       If you have questions or concerns about this Privacy Policy or the way the
       App handles information, please contact:
